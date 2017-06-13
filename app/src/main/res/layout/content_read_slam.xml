@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background_image"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.gmonetix.slambook.activity.ReadSlamActivity"
+    tools:showIn="@layout/activity_read_slam">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_abt_frnd"
+            android:text="ABOUT ME"
+            android:gravity="start"
+            tools:drawableEnd="@drawable/ic_arrow_down_white"
+            android:padding="16dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/rounded_corner_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ll_views_abt_frnd"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My nick name -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:text="-"
+                    android:id="@+id/tvNickName"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My date of birth -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:text="-"
+                    android:id="@+id/tvDob"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My aim in life -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:id="@+id/tvAim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My hobbies -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:id="@+id/tvHobbies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My zodiac Sign -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvZodiacSign"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_contacts"
+            android:text="WAYS TO REACH ME"
+            android:gravity="start"
+            tools:drawableEnd="@drawable/ic_arrow_right_white"
+            android:padding="16dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/rounded_corner_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ll_views_contacts"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My mobile number -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvPhoneNumber"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="I stay at -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvAddress"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My facebook id -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvFb"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My twitter id -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvTwitter"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My instagram id -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvInstagram"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My websites -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvWebsite"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_your_moments"
+            android:text="MY MOMENTS"
+            android:gravity="start"
+            tools:drawableEnd="@drawable/ic_arrow_right_white"
+            android:padding="16dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/rounded_corner_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ll_views_your_moments"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="Happy Moment with you -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvHpyMomentWidU"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="Sad Moment with you -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvSadMomentWidU"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="When I am happy -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvWhenMHappy"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="When I am sad -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvWhenMSad"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="When I am mad -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvWhenMMad"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My best memorable moment -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvMemorableMoment"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My most embrassing moment -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvEmbarassingMoment"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_favourites"
+            android:text="FAVOURITES"
+            android:gravity="start"
+            tools:drawableEnd="@drawable/ic_arrow_right_white"
+            android:padding="16dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/rounded_corner_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ll_views_favourites"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My favourite color -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvFavColor"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My favourite celebrity -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvFavCelebrities"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My favourite role model -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvFavRoleModel"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My your favourite TV show -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvFavTvShow"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My your favourite music band ?"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvFavMusicBand"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My your favourite food ?"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvFavFood"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My your favourite game ?"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvFavSport"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_more_abt_frnd"
+            android:text="MORE ABOUT ME"
+            android:gravity="start"
+            tools:drawableEnd="@drawable/ic_arrow_right_white"
+            android:padding="16dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/rounded_corner_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ll_views_more_abt_frnd"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="If I become famous I will change my name to -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvOnFamousNameChange"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="I love to wear -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:id="@+id/tvLoveWearing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My favourite hangout place -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:id="@+id/tvHangoutPlace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="Treat I want for birthday -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvTreatForBirthday"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My usual weekend activity -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvWeekendActivity"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="Things I want to do before I die -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvThingsToDoBeforeDie"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="What bores me most ?"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvWhatBoresMe"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="What makes me crazy ?"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvMcrazyAbout"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My biggest strength -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvMyBiggestStrength"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="Things I hate -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvThingsIHate"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My worst habit -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvWorstHabit"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="Best thing about me -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvBestThingAbtMe"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="Feel powerful when -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvFeelPowerfullWhen"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="My biggest achievement -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvBiggestAchievement"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="Mt teddy knows !"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvMyTeddyKnows"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_abt_you"
+            android:text="ABOUT YOU"
+            android:gravity="start"
+            tools:drawableEnd="@drawable/ic_arrow_right_white"
+            android:padding="16dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/rounded_corner_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/ll_views_abt_you"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="Good things about you -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvGoodThingsAbtU"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="Bad things about you -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvBadThingsAbtU"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:text="Friendship to me is -"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tvFriendshipToMe"
+                    android:text="-"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background_image" >
+
+    <RelativeLayout
+        android:id="@+id/profile_activity_ll2"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/profileImage"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#9E9E9E"
+            tools:src="@drawable/user_default_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            app:fabSize="auto"
+            android:id="@+id/profile_activity_change_pic"
+            app:srcCompat="@drawable/ic_camera_white"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/profile_activity_ll2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@drawable/rounded_corner_ll"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv1"
+                    app:srcCompat="@drawable/user_outline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_toRightOf="@+id/iv1"
+                    android:layout_toEndOf="@+id/iv1"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_centerVertical="true"
+                    android:text="Name"
+                    android:id="@+id/profile_activity_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/profile_activity_edit_name"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/edit_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <RelativeLayout
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv2"
+                    app:srcCompat="@drawable/email_outline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_toRightOf="@+id/iv2"
+                    android:layout_toEndOf="@+id/iv2"
+                    android:text="Email"
+                    android:id="@+id/profile_activity_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/profile_activity_edit_email"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/edit_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <RelativeLayout
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv3"
+                    app:srcCompat="@drawable/phone_outline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_toRightOf="@+id/iv3"
+                    android:layout_toEndOf="@+id/iv3"
+                    android:text="7478870112"
+                    android:id="@+id/profile_activity_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/profile_activity_edit_phone"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/edit_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <RelativeLayout
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv4"
+                    app:srcCompat="@drawable/ic_calender_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_toRightOf="@+id/iv4"
+                    android:layout_toEndOf="@+id/iv4"
+                    android:id="@+id/profile_activity_dob"
+                    android:text="17 November 1997"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/profile_activity_edit_dob"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/edit_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <RelativeLayout
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv5"
+                    app:srcCompat="@drawable/ic_book_open_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_toRightOf="@+id/iv5"
+                    android:layout_toEndOf="@+id/iv5"
+                    android:id="@+id/profile_activity_desc"
+                    android:layout_toLeftOf="@+id/profile_activity_edit_desc"
+                    android:layout_toStartOf="@+id/profile_activity_edit_desc"
+                    android:text="Description - null or not this i a total dummy content based upon may facts and usages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/profile_activity_edit_desc"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/edit_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    app:srcCompat="@drawable/phone_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Switch
+                    android:textColor="#9E9E9E"
+                    android:id="@+id/profile_activity_number_visibility_toggle"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Show number to Friends" />
+            </LinearLayout>
+            <View
+                android:background="#9E9E9E"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:padding="16dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    app:srcCompat="@drawable/ic_calender_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:id="@+id/profile_activity_registered_at"
+                    android:textColor="#9E9E9E"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Registered at : 28/06/2017" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

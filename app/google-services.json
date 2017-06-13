@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "468238548132",
+    "firebase_url": "https://slambook-ae14b.firebaseio.com",
+    "project_id": "slambook-ae14b",
+    "storage_bucket": "slambook-ae14b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468238548132:android:d3e249ebdb983b0b",
+        "android_client_info": {
+          "package_name": "com.gmonetix.slambook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468238548132-tb9lcqt6m1uvnkfeo3jnbgbsr3pfgst9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gmonetix.slambook",
+            "certificate_hash": "ddb1489f3e39900f4685ae10e9704aaaa2b6747c"
+          }
+        },
+        {
+          "client_id": "468238548132-upfre9nu3mb0mdcvveig7m5odbjkttas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH0WtsxN2yT-FS4eNIUYUsoqRdEj-wUDA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "468238548132-upfre9nu3mb0mdcvveig7m5odbjkttas.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

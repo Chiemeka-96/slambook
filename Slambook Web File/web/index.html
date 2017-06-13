@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>App Manager - Extract, Delete &amp; more</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/hover.css" rel="stylesheet" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>						
+<!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+		</script>
+ 	<!---- start-smoth-scrolling---->
+
+</head>
+<body>
+<!---->
+<div id="home" class="banner">
+	 <div class="container">
+		 <div class="col-md-6 banner-info">
+			 <div class="logo">
+				 <a href="#home"><img src="images/logo.png" alt=""/></a>
+			 </div>			 
+			 <!-- start slider -->			 
+			 <div class="flexslider">
+				 <ul class="slides">
+					 <li>
+						 <div class="tittle">
+							 <h1>Slam Book</h1>
+								<p>What our app is good for is making your life easier.	How does it work? That’s exactly what we want to tell you about.
+								Stay with us and the answer will reveal itself, it will be absolutely cool.</p>
+							  <a class="hvr-shutter-in-horizontal" href="#">LEARN MORE</a>
+						</div>
+					  </li>	
+						<li>
+						 <div class="tittle">
+							 <h1>Slam Book</h1>
+								<p>What our app is good for is making your life easier.	How does it work? That’s exactly what we want to tell you about.
+								Stay with us and the answer will reveal itself, it will be absolutely cool.</p>
+							  <a class="hvr-shutter-in-horizontal" href="#">LEARN MORE</a>
+						</div>
+					  </li>	
+					  <li>
+						 <div class="tittle">
+							 <h1>Slam Book</h1>
+								<p>What our app is good for is making your life easier.	How does it work? That’s exactly what we want to tell you about.
+								Stay with us and the answer will reveal itself, it will be absolutely cool.</p>
+							  <a class="hvr-shutter-in-horizontal" href="#">LEARN MORE</a>
+						</div>
+					  </li>	
+				  </ul>
+			 </div>
+			  <!-- end slider -->			
+		 </div>		 
+		 <div class="col-md-6 banner-pic">
+			 <img src="images/phone.png" alt=""/>
+		 </div>
+		 <div class="clearfix"></div>
+	 </div>
+</div>
+<!---->
+<div class="navigation">	 
+	 <div class="container">
+	     <div class="fixed-header">
+			 <div class="nav-logo">
+				 <a class="scroll" href="#home"><img src="images/nav-logo.png" alt=""/></a>
+			 </div>
+			 <div class="top-menu">
+					<span class="menu"> </span>
+				 <nav class="cl-effect-21">
+					<ul class="top-menu2">
+						<li><a class="scroll" href="#home">HOME</a></li>
+						<li><a class="scroll" href="#services">SERVICES</a></li>
+						<li><a class="scroll" href="#about">ABOUT</a></li>
+						<li><a class="scroll" href="#team">TEAM</a></li>
+						<li><a class="scroll" href="#work">WORK</a></li>
+						<li><a class="scroll" href="#features">FEATURES</a></li>				
+						<li><a class="scroll" href="#contact">CONTACT US</a></li>
+						<li><a class="scroll" href="#short">SHORTCODES</a></li>
+					</ul>
+				</nav>		
+				</div>
+				<script>
+			$("span.menu").click(function(){
+				$(".top-menu ul").slideToggle(500, function(){
+				});
+			});
+			</script>
+
+				<!-- script for menu -->
+					<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+					</script>
+
+				<!-- script for menu -->
+				<script>
+			 $(document).ready(function() {
+				 var navoffeset=$(".navigation").offset().top;
+				 $(window).scroll(function(){
+					var scrollpos=$(window).scrollTop(); 
+					if(scrollpos >=navoffeset){
+						$(".navigation").addClass("fixed");
+					}else{
+						$(".navigation").removeClass("fixed");
+					}
+				 });
+				 
+			 });
+			 </script>
+
+			 <div class="clearfix"></div>
+		 </div>
+	 </div>
+</div>
+<!---->
+<!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+							  <script type="text/javascript">
+								$(function(){
+								  SyntaxHighlighter.all();
+								});
+								$(window).load(function(){
+								  $('.flexslider ').flexslider({
+									animation: "slide",
+									start: function(slider){
+									  $('body').removeClass('loading');
+									}
+								  });
+								});
+							  </script>
+<!---->
+<div id="services" class="services">
+	 <div class="container">
+		 <div class="col-md-4 sercive-grid">
+			 <img src="images/ser1.png" alt=""/>
+			 <h3>CUSTOMIZATION</h3>
+			 <p>We really believe that apps and websites should not only be eye catching but an actually provide a
+			 really great user experience that users will be actually provide and remember.</p>
+		 </div>
+		 <div class="col-md-4 sercive-grid">
+			 <img src="images/ser2.png" alt=""/>
+			 <h3>CUSTOMER SERVICE</h3>
+			 <p>Rest easy knowing real people are ready to help you 24 hours a day. Everyone on our award-winning Customer Care team is an
+				Be cool, be with us today, brother..</p>
+		 </div>
+		 <div class="col-md-4 sercive-grid">
+			 <img src="images/ser3.png" alt=""/>
+			 <h3>ANALYTICS</h3>
+			 <p>View the traffic and behavior of visitors in real-time. Learn where they're coming from, and what search keywords
+			 It’s really importans for young man, don’t missing with us.</p>
+		 </div>
+	 </div>
+</div>
+<!---->
+<div class="fully">
+	 <div class="container">
+		 <img src="images/icons.png" alt=""/>
+		 <h3>Fully responsive</h3>
+	 </div>
+</div>
+<!---->
+<div id="about" class="about">
+	 <div class="container">
+		 <img src="images/mac.jpg" alt=""/>
+		 <h3>We really know what you need.</h3>
+		 <p>Whether you need simple pages, striking galleries, a professional blog, or an online store, it's all included with your Squarespace website. Best of all, everything is 
+			mobile-ready right from the start  with your Squarespace website</p>
+		  <a class="hvr-bounce-to-top" href="#">TRY RIGHT NOW</a>
+	 </div>
+</div>
+<!---->
+<div id="team" class="team">
+	 <div class="container">
+		 <div class="team-info">
+			 <h3>Our awesome team</h3>
+			 <p>We believe in a diverse range of personel to bring creative skills, thoughts, and ideas to the table. Be cool, we awesome, be with us today, really ok?</p>
+		 </div>
+		 <div class="team-grids">
+			 <div class="col-md-4 team-grid">
+				 <a href="#"><img src="images/man1.jpg" alt=""/></a>
+				 <h3>Gregory Lapin</h3>
+				 <h5>CO-FOUNDER</h5>
+				 <div class="caption">
+					 <p>«New greate way to create open
+						space in your city house.»</p>
+						<div class="social-icons">
+							<a href="#"><i class="twtr"></i></a>
+							<a href="#"><i class="fb"></i></a>
+							<a href="#"><i class="inst"></i></a>						
+						</div>
+				 </div>
+			 </div>
+			 <div class="col-md-4 team-grid">
+				 <a href="#"><img src="images/man2.jpg" alt=""/></a>
+				 <h3>Nick Frost</h3>
+				 <h5>CO-FOUNDER</h5>
+				 <div class="caption">
+					 <p>«New greate way to create open
+						space in your city house.»</p>
+						<div class="social-icons">
+							<a href="#"><i class="twtr"></i></a>
+							<a href="#"><i class="fb"></i></a>
+							<a href="#"><i class="inst"></i></a>						
+						</div>
+				 </div>
+			 </div>
+			 <div class="col-md-4 team-grid">
+				 <a href="#"><img src="images/man3.jpg" alt=""/></a>
+				 <h3>Alex Nevsky</h3>
+				 <h5>CO-FOUNDER</h5>
+				 <div class="caption">
+					 <p>«New greate way to create open
+						space in your city house.»</p>
+						<div class="social-icons">
+							<a href="#"><i class="twtr"></i></a>
+							<a href="#"><i class="fb"></i></a>
+							<a href="#"><i class="inst"></i></a>						
+						</div>
+				 </div>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+	 </div>	
+</div>
+<!---->
+<div id="work" class="work">
+	 <div class="container">
+		 <div class="work-info">
+			 <h3>Just watch this promo!</h3>
+			 <p>Whether you need simple pages, striking galleries, a professional blog, or an online store, it's all included with your Squarespace website. Best of all, everything is 
+				mobile-ready right from the start  with your Squarespace website</p>
+			 <img src="images/phone2.png" alt=""/>
+			 <div class="work-pic-info">
+				 <h4>CUSTOMIZATION</h4>
+				 <p>With our grea reliable and scalable cloud infrastructure, there's no downtime</p>
+			 </div>
+		 </div>
+	 </div>
+</div>
+<!---->
+<div class="subscribe">
+	 <div class="container">
+		 <img src="images/sub.png" alt=""/>
+		 <form>
+			 <input type="text" class="text" value="Enter your Email here to subscribe" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your Email here to subscribe';}">
+			  <input type="submit" value="SUBSCRIBE ME"/>
+		 </form>
+	 </div>
+</div>
+<!---->
+<div class="clients">
+	 <div class="container">
+		 <h3>Our clients</h3>
+		 <div class="clients-grids">
+				<a href="#"><span class="client1"></span></a>
+				<a href="#"><span class="client2"></span></a>
+				<a href="#"><span class="client3"></span></a>
+				<a href="#"><span class="client4"></span></a>
+		 </div>
+	 </div>
+</div>
+<!---->
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
+<script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+    });
+  </script>
+<div id="features" class="features">
+	 <div class="container">
+		 <div class="slider">
+			 <div class="callbacks_container">
+			 <ul class="rslides" id="slider">
+	          <li>
+				  <div class="features-info">
+					 <img src="images/bird.png" alt=""/>
+					 <p>Beautiful Examples of Login Forms for Websites and Apps <span>-http://w3layouts.com/</span>on Designmodo #inspiration. Share new designs with us!</p>
+					 <h5><a href="mailto:info@example.com">@info(at)example.com</a> 6 days ago</h5>
+				  </div>
+				 </li>
+				 <li>
+					  <div class="features-info">
+							<img src="images/fb.png" alt=""/>
+							<p>Beautiful Examples of Login Forms for Websites and Apps <span>-http://w3layouts.com/</span>on Designmodo #inspiration. Share new designs with us!</p>
+							<h5><a href="mailto:info@example.com">@info(at)example.com</a> 8 days ago</h5>
+					  </div>
+				 </li>
+				 <li>
+					  <div class="features-info">
+							<img src="images/g-plus.png" alt=""/>
+							<p>Beautiful Examples of Login Forms for Websites and Apps <span>-http://w3layouts.com/</span>on Designmodo #inspiration. Share new designs with us!</p>
+							<h5><a href="mailto:info@example.com">@info(at)example.com</a> 1 week ago</h5>
+					  </div>
+				 </li>
+			  </ul>
+			  </div>
+	     </div>
+	  </div>
+</div>
+<!---->
+<div class="numbers">
+	 <div class="container">
+		 <div class="number-grids">
+			 <div class="col-md-3 numic-grid">
+				 <div class="icon1"></div>
+				 <h3>23325</h3>
+				 <label></label>
+				 <p>great guy use our apps</p>
+			 </div>
+			 <div class="col-md-3 numic-grid">
+				 <div class="icon2"></div>
+				 <h3>246</h3>
+				 <label></label>
+				 <p>hearts we broke now</p>
+			 </div>
+			 <div class="col-md-3 numic-grid">
+				 <div class="icon3"></div>
+				 <h3>6345</h3>
+				 <label></label>
+				 <p>great guy use our apps</p>
+			 </div>
+			 <div class="col-md-3 numic-grid">
+				 <div class="icon4"></div>
+				 <h3>23325</h3>
+				 <label></label>
+				 <p>great guy use our apps</p>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+	 </div>
+</div>
+<!---->
+<div id="contact" class="contact">
+	 <div class="container">
+		 <div class="contact-info">
+			 <h3>Still have questions, get back to us!</h3>
+			 <p>Please use the form below to contact us. We look forward to working with you and will get back to you as soon as possible. All fields are required.</p>
+		 </div>
+		 <div class="contact-grids">
+			 <div class="col-md-6 contact-details">
+				 <form>
+				 <li>
+					 <input type="text" class="text" value="NAME" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'NAME';}">
+					 <a class="icon11" href="#"></a>
+				 </li>
+				 <div class="clearfix"></div>
+				 <li>
+					 <input type="text" class="text" value="EMAIL" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'EMAIL';}">
+					 <a class="icon22" href="#"></a>
+				 </li>
+				 <div class="clearfix"></div>
+				 <li>
+					 <input type="text" class="text" value="PHONE" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'PHONE';}">
+					 <a class="icon33 " href="#"></a>
+				 </li>
+				 <div class="clearfix"></div>
+				 </form>
+			 </div>			 
+			  <div class="col-md-6 contact-details-right">
+				 <form>
+				 <textarea onfocus="if(this.value == 'MESSAGE') this.value='';" onblur="if(this.value == '') this.value='MESSAGE';">MESSAGE</textarea>
+				 <input type="submit" value="SEND MESSAGE">
+				 </form>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+			 
+		 <div class="social-media">
+			 <a href="#"><i class="instagram"></i></a>
+			 <a href="#"><i class="facebook"></i></a>
+			 <a href="#"><i class="pinterest"></i></a>
+			 <a href="#"><i class="twitter"></i></a>
+			 <a href="#"><i class="google"></i></a>
+		 </div>
+	 </div>
+</div>
+<!---->
+<script type="text/javascript" src="js/modernizr.custom.min.js"></script>    
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+				<!-- //pop-up-box -->
+					<div id="small-dialog1" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pic1.jpg" alt="" />
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. </p>
+						</div>
+					</div>
+					<div id="small-dialog2" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pic2.jpg" alt="" />
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. </p>
+						</div>
+					</div>
+					<div id="small-dialog3" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pic3.jpg" alt="" />
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. </p>
+						</div>
+					</div>
+					<div id="small-dialog4" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pic4.jpg" alt="" />
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. </p>
+						</div>
+					</div>
+					<div id="small-dialog5" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pic5.jpg" alt="" />
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. </p>
+						</div>
+					</div>
+					<div id="small-dialog6" class="mfp-hide">
+						<div class="image-top">
+							<img src="images/pic6.jpg" alt="" />
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to book.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. </p>
+						</div>
+					</div>					
+			</div>
+			<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>	
+
+	     <div id="portfoliolist">
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">		
+							<a href="#small-dialog1" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="images/pic1.jpg" class="img-responsive" alt=""/>
+							<div class="tour-caption">							
+							<h4>Creative Dush Pro</h4>
+							<p>New greate way to create open space in your city house.</p>	
+							<span> </span>
+							</div></a>
+						</div>
+					</div>				
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">		
+							<a href="#small-dialog2" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="images/pic2.jpg" class="img-responsive" alt=""/>
+							 <div class="tour-caption">
+							 <h4>Creative Dush Pro</h4>
+							 <p>New greate way to create open space in your city house.</p>	
+							<span> </span>
+						     </div></a>
+						</div>
+					</div>		
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">		
+							<a href="#small-dialog3" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="images/pic3.jpg" class="img-responsive" alt=""/>
+							 <div class="tour-caption">
+							 <h4>Creative Dush Pro</h4>
+							 <p>New greate way to create open space in your city house.</p>	
+							 <span> </span>
+							 </div></a>
+						</div>
+					</div>				
+					<div class="portfolio fun mix_all" data-cat="fun" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">		
+							<a href="#small-dialog4" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="images/pic4.jpg" class="img-responsive" alt=""/>
+							 <div class="tour-caption">
+							 <h4>Creative Dush Pro</h4>
+							 <p>New greate way to create open space in your city house.</p>		
+							 <span> </span>
+							</div></a>
+						</div>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">		
+							<a href="#small-dialog5" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="images/pic5.jpg" class="img-responsive" alt=""/>
+							 <div class="tour-caption">
+							 <h4>Creative Dush Pro</h4>
+							 <p>New greate way to create open space in your city house.</p>	
+							 <span> </span>
+							 </div></a>
+						</div>
+					</div>			
+					<div class="portfolio fun mix_all" data-cat="fun" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper wow bounceIn" data-wow-delay="0.4s">		
+							<a href="#small-dialog6" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="images/pic6.jpg" class="img-responsive" alt=""/>
+							 <div class="tour-caption">
+							 <h4>Creative Dush Pro</h4>
+							 <p>New greate way to create open space in your city house.</p>							
+							 <span> </span>
+							</div></a>
+						</div>
+			      </div>
+				  
+		   <div class="clearfix"></div>	
+	  </div>
+</div>
+<!---->
+<div class="features-section">
+	 <div class="container">
+		 <div class="feature-section-grids">
+		 <div class="col-md-3 feature-sec">
+			 <span class="ftr1"></span>
+			 <h3>CUSTOMIZATION</h3>
+			 <p>With our reliable and scalable cloud infrastructure, nothing to there's no downtime, and nothing to install, patch, or upgrade. Ever.</p>
+		 </div>
+		 <div class="col-md-3 feature-sec">
+			 <span class="ftr2"></span>
+			 <h3>SECURITY</h3>
+			 <p>With our reliable and scalable cloud infrastructure, nothing to there's no downtime, and nothing to install, patch, or upgrade. Ever.</p>
+		 </div>
+		 <div class="col-md-3 feature-sec">
+			 <span class="ftr3"></span>
+			 <h3>CLOUD SYNC</h3>
+			 <p>With our reliable and scalable cloud infrastructure, nothing to there's no downtime, and nothing to install, patch, or upgrade. Ever.</p>
+		 </div>
+		 <div class="col-md-3 feature-sec">
+			 <span class="ftr4"></span>
+			 <h3>ANALYTICS</h3>
+			 <p>With our reliable and scalable cloud infrastructure, nothing to there's no downtime, and nothing to install, patch, or upgrade. Ever.</p>
+		 </div>
+		 <div class="clearfix"></div>
+		 
+		 <div class="col-md-3 feature-sec">
+			 <span class="ftr5"></span>
+			 <h3>CUSTOMIZATION</h3>
+			 <p>With our reliable and scalable cloud infrastructure, nothing to there's no downtime, and nothing to install, patch, or upgrade. Ever.</p>
+		 </div>
+		 <div class="col-md-3 feature-sec">
+			 <span class="ftr6"></span>
+			 <h3>SECURITY</h3>
+			 <p>With our reliable and scalable cloud infrastructure, nothing to there's no downtime, and nothing to install, patch, or upgrade. Ever.</p>
+		 </div>
+		 <div class="col-md-3 feature-sec">
+			 <span class="ftr7"></span>
+			 <h3>CLOUD SYNC</h3>
+			 <p>With our reliable and scalable cloud infrastructure, nothing to there's no downtime, and nothing to install, patch, or upgrade. Ever.</p>
+		 </div>
+		 <div class="col-md-3 feature-sec">
+			 <span class="ftr8"></span>
+			 <h3>ANALYTICS</h3>
+			 <p>With our reliable and scalable cloud infrastructure, nothing to there's no downtime, and nothing to install, patch, or upgrade. Ever.</p>
+		 </div>
+		 <div class="clearfix"></div>
+		 </div>
+	 </div>	
+</div>
+<!---->
+<div class="say-hello">
+	 <div class="container">
+		 <div class="col-md-6 hello-grid-address">
+			 <h3>That’s where we are</h3>
+			 <div class="address-grids">
+				 <div class="address-grid">
+					 <img src="images/cc1.png" alt=""/>
+					 <h4>LOCATION</h4>
+					 <p>West Bengal, India</p>
+				 </div>
+				 <div class="address-grid">
+					 <img src="images/cc2.png" alt=""/>
+					 <h4>EMAIL</h4>
+					 <p><a href="mailto:info@example.com"> gauravbordoloissg@gmonetix.com</a></p>
+				 </div>
+				 <div class="clearfix"></div>
+				 <div class="address-grid">
+					 <img src="images/cc3.png" alt=""/>
+					 <h4>PHONE NUMBER</h4>
+					 <p>+91 8404017253 (Whatsapp)</p>
+					 <p>+91 7478870112 (M)</p>
+				 </div>
+				 <div class="address-grid">
+					 <img src="images/cc4.png" alt=""/>
+					 <h4>SOCIAL MEDIA</h4>
+					 <p><a href="http://www.facebook.com/gmonetix" target="_blank"> www.facebook.com/gmonetix</a></p>
+				 </div>
+				 <div class="clearfix"></div>
+			 </div>
+		 </div>
+		 <div class="col-md-6 hello-grid-form">
+			 <h3>Say hello!</h3>
+			 <form>
+				 <li class="text"><input type="text" placeholder="Name" required/><div class="p1"></div></li>
+				 <li class="text"><input type="text" placeholder="TYPING" required/><div class="p2"></div></li>
+				 <li class="text"><textarea placeholder="YOUR MESSAGE"></textarea></li>
+				 <input type="submit" value="SEND MESSAGE"/>
+			 </form>
+		 </div>
+		 <div class="clearfix"></div>		 
+	 </div>
+</div>
+<!---->
+<div class="copy-right">
+	 <p>Copyrights &copy; 2017 GMONETIX | All rights reserved</p>
+</div>
+<!---->
+<div id="short" class="fotter">
+	 <div class="container">
+		 <div class="col-md-6 short-codes-left">
+			 <div class="ftr-pic">
+				 <img src="images/ftr-logo.png" alt=""/>
+			 </div>
+			 <div class="ftr-info">
+				 <p>Be sure to take a look to our</p>
+				 <p><a href="#">Terms of Use</a> and <a href="#"> Privacy Policy</a></p>
+			 </div>
+			 <div class="clearfix"></div>
+		 </div>
+		 <div class="col-md-6 short-codes-right">
+			 <a href="#"><span class="sc2"></span> ANDRIOD</a>
+		 </div>
+		 <div class="clearfix"></div>
+	 </div>
+</div>
+</body>
+</html>

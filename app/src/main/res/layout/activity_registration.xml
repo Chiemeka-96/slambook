@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/login_background_image"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gmonetix.slambook.activity.RegistrationActivity">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/appLogo"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_launcher"
+                android:contentDescription="Logo"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_corner_ll"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        app:srcCompat="@drawable/user_outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.gmonetix.slambook.helper.RobotoEditText
+                        android:hint="name"
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/et_name" />
+                </LinearLayout>
+
+                <View
+                    android:background="#9E9E9E"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        app:srcCompat="@drawable/email_outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.gmonetix.slambook.helper.RobotoEditText
+                        android:hint="email"
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:ems="10"
+                        android:id="@+id/et_email" />
+                </LinearLayout>
+
+                <View
+                    android:background="#9E9E9E"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        app:srcCompat="@drawable/user_outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.gmonetix.slambook.helper.RobotoEditText
+                        android:hint="username"
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/et_username" />
+                </LinearLayout>
+
+                <View
+                    android:background="#9E9E9E"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        app:srcCompat="@drawable/ic_lock_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.gmonetix.slambook.helper.RobotoEditText
+                        android:hint="password"
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:ems="10"
+                        android:id="@+id/et_password" />
+                </LinearLayout>
+
+                <View
+                    android:background="#9E9E9E"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        app:srcCompat="@drawable/phone_outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.gmonetix.slambook.helper.RobotoEditText
+                        android:hint="phone number"
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:ems="10"
+                        android:id="@+id/et_phone_number" />
+                </LinearLayout>
+
+                <View
+                    android:background="#9E9E9E"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        app:srcCompat="@drawable/ic_pencil_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <com.gmonetix.slambook.helper.RobotoEditText
+                        android:hint="your bio"
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textLongMessage"
+                        android:ems="10"
+                        android:id="@+id/et_description" />
+                </LinearLayout>
+
+                <View
+                    android:background="#9E9E9E"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageButton
+                        android:id="@+id/ib_dob"
+                        app:srcCompat="@drawable/ic_calender_black"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp" />
+                    <com.gmonetix.slambook.helper.RobotoTextView
+                        android:id="@+id/tv_dob"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:hint="date of birth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp" />
+                </LinearLayout>
+
+                <View
+                    android:background="#9E9E9E"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:padding="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageButton
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_gender_black"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp" />
+
+                    <com.gmonetix.slambook.helper.RobotoTextView
+                        android:textSize="18sp"
+                        android:hint="gender"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp" />
+
+                    <RadioGroup
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:id="@+id/radio_group_container_dob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:text="Male"
+                            app:buttonTint="#9e9e9e"
+                            android:textColor="#9e9e9e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/maleRadioBtn" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:text="Female"
+                            app:buttonTint="#9e9e9e"
+                            android:textColor="#9e9e9e"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/femaleRadioBtn" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.gmonetix.slambook.helper.RobotoButton
+                android:id="@+id/btn_register"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:text="REGISTER"
+                android:background="@drawable/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.gmonetix.slambook.helper.RobotoTextView
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@+id/login_here_tv"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:text="Already a member! Login here"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.gmonetix.slambook.helper.RobotoTextView
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@+id/privacy_policy_register_screen"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="50dp"
+                android:text="Privacy Policy"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+</ScrollView>

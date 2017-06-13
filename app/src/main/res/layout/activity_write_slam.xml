@@ -1,0 +1,1221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background_image"
+    tools:context="com.gmonetix.slambook.activity.WriteSlamActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        />
+
+    <ScrollView
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/rounded_corner_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/adViewWriteSlam" >
+            <LinearLayout
+                android:orientation="vertical"
+                android:animateLayoutChanges="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_abt_u"
+                    android:text="ABOUT YOU"
+                    android:gravity="start"
+                    tools:drawableEnd="@drawable/ic_arrow_down_white"
+                    android:padding="16dp"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rounded_corner_dropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/ll_views_abt_u"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="What's your nick name ?"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:hint="my nickname"
+                            android:id="@+id/etNickName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Your date of birth -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:layout_marginTop="10dp"
+                            android:text="17/11/1997"
+                            android:id="@+id/tvDob"
+                            android:textSize="16sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="What's your aim in life ?"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:hint="i want to be..."
+                            android:id="@+id/etAim"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Write your hobbies -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:hint="hobbies..."
+                            android:id="@+id/etHobbies"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="What's your Zodiac Sign ?"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etZodiacSign"
+                            android:hint="gemini or scorpio or other..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_contacts"
+                    android:text="WAYS TO REACH YOU"
+                    android:gravity="start"
+                    tools:drawableEnd="@drawable/ic_arrow_right_white"
+                    android:padding="16dp"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rounded_corner_dropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/ll_views_contacts"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Your mobile number ?"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etPhoneNumber"
+                            android:text="8404017253"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="phone" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Where you stay ?"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etAddress"
+                            android:hint="place on earth..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Your facebook id -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etFb"
+                            android:hint="facebook id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Your twitter id -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etTwitter"
+                            android:hint="twitter id..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Your instagram id -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etInstagram"
+                            android:hint="instagram id..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Your websites ?"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etWebsite"
+                            android:hint="website link..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_your_moments"
+                    android:text="YOUR MOMENTS"
+                    android:gravity="start"
+                    tools:drawableEnd="@drawable/ic_arrow_right_white"
+                    android:padding="16dp"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rounded_corner_dropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/ll_views_your_moments"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Happy Moment with your friend -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etHpyMomentWidU"
+                            android:hint="happy moments..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Sad Moment with your friend -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etSadMomentWidU"
+                            android:hint="sad moments..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="When you are happy you -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etWhenMHappy"
+                            android:hint="happy activities..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="When you are sad you -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etWhenMSad"
+                            android:hint="sad activities..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="When you are mad you -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etWhenMMad"
+                            android:hint="mad activities..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Your best memorable moment -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etMemorableMoment"
+                            android:hint="good memories..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Your most embrassing moment -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etEmbarassingMoment"
+                            android:hint="bad memories..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_favourites"
+                    android:text="YOUR FAVOURITES"
+                    android:gravity="start"
+                    tools:drawableEnd="@drawable/ic_arrow_right_white"
+                    android:padding="16dp"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rounded_corner_dropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/ll_views_favourites"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="What's your favourite color ?"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etFavColor"
+                            android:hint="color..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Who's your favourite celebrity ?"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etFavCelebrities"
+                            android:hint="celebrities..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Who's your favourite role model ?"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etFavRoleModel"
+                            android:hint="ideal model..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="What's your favourite TV show ?"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etFavTvShow"
+                            android:hint="tv shows..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="What's your favourite music band ?"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etFavMusicBand"
+                            android:hint="music bands..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="What's your favourite food ?"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etFavFood"
+                            android:hint="foods..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="What's your favourite game ?"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etFavSport"
+                            android:hint="games..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_more_abt_u"
+                    android:text="MORE ABOUT YOU"
+                    android:gravity="start"
+                    tools:drawableEnd="@drawable/ic_arrow_right_white"
+                    android:padding="16dp"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rounded_corner_dropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/ll_views_more_abt_u"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="If you become famous you will change your name to -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etOnFamousNameChange"
+                            android:hint="my new name &#128521;"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="You love to wear -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:hint="dresses..."
+                            android:id="@+id/etLoveWearing"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Your favourite hangout place -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:hint="places i love"
+                            android:id="@+id/etHangoutPlace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="What treat you want for birthday ?"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etTreatForBirthday"
+                            android:hint="birthday treat..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Your usual weekend activity -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etWeekendActivity"
+                            android:hint="activities..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Things you want to do before you die -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etThingsToDoBeforeDie"
+                            android:hint="wokrs..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="What bores you most ?"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etWhatBoresMe"
+                            android:hint="boring activities..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="What makes you crazy ?"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etMcrazyAbout"
+                            android:hint="crazy activities..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Your biggest strength ?"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etMyBiggestStrength"
+                            android:hint="my strengths..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Things you hate -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etThingsIHate"
+                            android:hint="dislikes..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="What's your worst habit ?"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etWorstHabit"
+                            android:hint="bad habit..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Best thing about you -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etBestThingAbtMe"
+                            android:hint="real me..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Feel powerful when -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etFeelPowerfullWhen"
+                            android:hint="my motivations..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Your biggest achievement -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etBiggestAchievement"
+                            android:hint="achievements in life..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Your teddy knows !"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etMyTeddyKnows"
+                            android:hint="sarcastic lines..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_abt_your_friend"
+                    android:text="ABOUT YOUR FRIEND"
+                    android:gravity="start"
+                    tools:drawableEnd="@drawable/ic_arrow_right_white"
+                    android:padding="16dp"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rounded_corner_dropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/ll_views_abt_your_friend"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Good things about your friend -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etGoodThingsAbtU"
+                            android:hint="good habits of your friend (truth)..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Bad things about your friend -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etBadThingsAbtU"
+                            android:hint="bad habits of your friend (truth)..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+                    <View
+                        android:background="#9E9E9E"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.gmonetix.slambook.helper.RobotoTextView
+                            android:text="Friendship to me is -"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                        <com.gmonetix.slambook.helper.RobotoEditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/etFriendshipToMe"
+                            android:hint="your feelings about friendship..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:inputType="text" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewWriteSlam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/ad_write_slam_activity">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

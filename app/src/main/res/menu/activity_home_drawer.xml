@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile_black"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@drawable/ic_friend_black"
+            android:title="My Friends" />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_message_chat"
+            android:title="Chats" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search"
+            android:title="Search" />
+        <item
+            android:id="@+id/nav_read"
+            android:icon="@drawable/ic_read_black"
+            android:title="Received Slams" />
+        <item
+            android:id="@+id/nav_sent"
+            android:icon="@drawable/ic_send_black"
+            android:title="Sent Slams" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout_black"
+            android:title="Logout" />
+    </group>
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_google_play_black"
+                android:title="Rate the App" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help_black"
+                android:title="Help" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/sent_slam_cardview"
+        android:elevation="4dp"
+        app:cardElevation="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_margin="6dp">
+
+        <RelativeLayout
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:id="@+id/frame_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/sent_slam_profile_image"
+                    android:layout_margin="8dp"
+                    tools:src="@drawable/user_default_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="#FF000000"/>
+
+                <ProgressBar
+                    android:layout_gravity="center"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sent_slam_profile_image_progrss_bar" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/frame_image"
+                android:layout_toEndOf="@+id/frame_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:id="@+id/sent_slam_username_tv"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:text="username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:id="@+id/sent_slam_name_tv"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:text="Name"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.gmonetix.slambook.helper.RobotoTextView
+                    android:id="@+id/sent_slam_updated_on_tv"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:text="Updated On"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/overflow_slam_cardview"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_overflow_black" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

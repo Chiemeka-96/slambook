@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\intel\Slambook\app\libs\volley.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="D:\intel\Slambook\app\build\intermediates\pre-dexed\debug\volley_18a09da181e0cf3143a6fae60597362a55f19b42.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\intel\Slambook\app\libs\volley.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="D:\intel\Slambook\app\build\intermediates\transforms\dex\debug\folders\1000\2\volley_18a09da181e0cf3143a6fae60597362a55f19b42\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\intel\Slambook\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f109d870a289892f281efc0c005fa04748eed897">
+        <dex dex="D:\intel\Slambook\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_0d15d792ccc9d9057df99ddab584b040cf7b484f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\intel\Slambook\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="D:\intel\Slambook\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_92b9c98df118ed87649a036b2213162245933e03\classes.dex" />
+    </item>
+
+</items>

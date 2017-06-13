@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@drawable/login_background_image"
+    android:orientation="vertical"
+    tools:context="com.gmonetix.slambook.activity.LoginActivity" >
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher"
+        android:contentDescription="Logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corner_ll"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_login_ll1">
+
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                app:srcCompat="@drawable/user_outline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.gmonetix.slambook.helper.RobotoEditText
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:hint="username"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/username_login" />
+        </LinearLayout>
+        <View
+            android:background="#9E9E9E"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                app:srcCompat="@drawable/ic_lock_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.gmonetix.slambook.helper.RobotoEditText
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/transparent"
+                android:hint="password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/password_login" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.gmonetix.slambook.helper.RobotoButton
+        android:id="@+id/btn_login"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:text="LOGIN"
+        android:background="@drawable/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.gmonetix.slambook.helper.RobotoTextView
+        android:gravity="center"
+        android:id="@+id/register_from_login_screen"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:text="Not a member yet? Sign up !"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.gmonetix.slambook.helper.RobotoTextView
+        android:gravity="center"
+        android:id="@+id/forgot_password_login_screen"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:text="Forgot Password !"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
